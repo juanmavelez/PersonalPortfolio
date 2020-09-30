@@ -1,12 +1,91 @@
 :root {
-	--Color1: rgba(214, 175, 0, 1);
-	--Color2: rgba(152, 120, 0, 1);
-	--Color3: rgba(155, 96, 0, 1);
-	--Color4: rgba(69, 61, 48, 1);
-	--Color5: rgba(20, 13, 13, 1);
+  --Color1: #3d0a16;
+  --Color2: #701329;
+  --Color3: #661125;
+  --Color4: #753746;
+  --Color5: #884051;
+  --Color6: #d4d0d4;
+  --Border: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-	font-size: 62.5%;
-	font-family: "Roboto", sans-serif;
+  background-color: var(--Color1);
+  color: var(--Color6);
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  gap: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+.aboutme,
+.skills,
+.contact,
+.main_picture {
+  border-radius: var(--Border);
+  background-color: var(--Color5);
+  border: 0.5rem solid var(--Color4);
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 85vw;
+  margin: 0 auto;
+}
+
+.aboutme:hover,
+.skills:hover,
+.contact:hover,
+.main_picture:hover {
+  box-shadow: -1px -1px 10px 0px var(--Color5);
+  max-width: 90vw;
+}
+
+.main_picture h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.main_picture__img {
+  border-radius: 50%;
+  width: 90%;
+  max-width: 646px;
+  max-height: 700px;
+}
+
+.main_picture__img:hover {
+  box-shadow: -1px -1px 10px 0px #d4d0d0;
+}
+
+.skills {
+  display: grid;
+}
+
+.contat__iconContainer {
+  max-width: 90%;
+}
+
+.contact__icon {
+  width: 5rem;
 }
