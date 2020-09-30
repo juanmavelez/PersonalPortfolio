@@ -5,3 +5,8 @@
 	--Color4: rgba(69, 61, 48, 1);
 	--Color5: rgba(20, 13, 13, 1);
 }
+
+body {
+	font-size: 62.5%;
+	font-family: "Roboto", sans-serif;
+}
