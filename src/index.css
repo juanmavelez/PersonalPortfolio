@@ -34,6 +34,7 @@ h6 {
 h1 {
   font-size: 2rem;
 }
+
 h2,
 h3,
 h4,
@@ -41,32 +42,41 @@ h5,
 h6 {
   font-size: 1.5rem;
 }
+/*    Boxes    */
+.main_picture,
 .aboutme,
 .skills,
 .contact,
-.main_picture {
+.workExperience,
+.technical,
+.hobbies,
+.protectsDone {
   border-radius: var(--Border);
   background-color: var(--Color5);
   border: 0.5rem solid var(--Color4);
   justify-content: center;
   text-align: center;
   width: 100%;
-  max-width: 85vw;
+  max-width: 90vw;
   margin: 0 auto;
 }
 
+.main_picture:hover,
 .aboutme:hover,
 .skills:hover,
 .contact:hover,
-.main_picture:hover {
+.workexperience:hover,
+.hobbies:hover,
+.protectsDone:hover {
   box-shadow: -1px -1px 10px 0px var(--Color5);
-  max-width: 90vw;
+  max-width: 90.5vw;
 }
-
+/*    Main      */
 .main_picture h2 {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .main_picture__img {
   border-radius: 50%;
   width: 90%;
@@ -77,15 +87,38 @@ h6 {
 .main_picture__img:hover {
   box-shadow: -1px -1px 10px 0px #d4d0d0;
 }
-
+/*    Skills section  */
 .skills {
-  display: grid;
+}
+.skills__icon__container {
+  display: flex;
+  justify-content: space-around;
+}
+.skills__icon__container figcaption {
+  font-size: 1.5rem;
+  align-self: center;
+}
+.skills__icon {
+  width: 50%;
+}
+/*      contact     */
+.contact__icon__container {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.contat__iconContainer {
-  max-width: 90%;
+.contact__icon__container figcaption {
+  align-self: center;
+  margin-left: 2rem;
 }
 
 .contact__icon {
-  width: 5rem;
+  width: 4rem;
+}
+
+/*    Technical Skills    */
+.technical__icon__container {
+}
+.technical__icon {
+  width: 40%;
 }
