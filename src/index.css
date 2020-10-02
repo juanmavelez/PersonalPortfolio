@@ -125,7 +125,7 @@ h6 {
 
 .contact__icon__container figcaption {
   align-self: center;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .contact__icon__content {
@@ -133,7 +133,7 @@ h6 {
 }
 
 .contact__icon {
-  width: 4rem;
+  width: 2rem;
 }
 
 /*    Technical Skills    */
